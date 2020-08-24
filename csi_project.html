@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Vacanza'18</title>
+    <style>
+        header{
+            text-align: center;
+            color: white;
+            background-image: url(img/background.png) ;
+            background-color: rgba(0,0,0,0.5);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            height: 700px;
+            flex-direction: column;          
+        }
+        nav{
+            position: sticky;
+        }
+        .nav-item{
+            display: flex;
+            float: right;
+            font-size: 20px;
+        }
+        body {
+          box-sizing: border-box;
+          position: relative; 
+        }
+        section{
+            background-color:white;
+            margin-top: 40px;
+            padding: 50px 40px;
+        }
+        main{
+            background-color: lightgray;
+            padding-top:10px;
+            padding-bottom:20px;
+        }
+        #footer-image{
+            height:100px;
+            width: 100%;
+            
+        }
+        footer{
+            animation-name: zoom;
+            animation-duration: infinity;
+        }
+        @keyframes zoom{
+            0%{
+                transform: scale(0.1);
+            }
+            500%{
+                transform: scale(1);
+            }
+        }
+        .header-text-logo img{
+            position: relative;
+            justify-content: center;
+            height: 70px;
+            margin-top: 90px;
+            
+        }
+     </style>
+  </head>
+  <body>
+  <header class="header">
+       <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand display-1" href="#">CSI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <div class=" navbar-collapse" >
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" id="one" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="two" href="#">Rounds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="two" href="#">Quizzes</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="header-content">
+
+            <div class="header-logo-box">
+                <img src="img/logo.PNG" alt="Vacanza_logo" class="header-logo-box-icon">
+            </div>
+
+            <div class="header-text-logo">
+                <img src="img/vac.svg" alt="text-logo">
+            </div>
+            <div class="header-buttons">
+                <a href="#" class="btn btn-rules">REGISTER
+                
+            </a>
+                <a href="#" class="btn btn-quiz">START QUIZ
+             
+            </a>
+            </div>
+        </div>
+  </header>
+      <main>
+           <div class="container">
+           <section>
+               <h4>ROUND 1</h4>
+               <p>Round 1 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for , the more you score.</p>
+               <p>
+                   <span style="font-weight:700;">The four domains are:</span>
+                   <br>
+                   Vintage Photography   |   Leaf Collage   |   Origami Art   |   Face Mask Art
+               </p>
+           </section>
+           <section>
+               <h4>ROUND 2</h4>
+               <p>Test your knowledge just by answering some basic questions and gain points easily.Round 2 contains quiz questions based on popular TV series and sports.</p>
+               <p>
+                   <span style="font-weight:700;">The field are as follows:</span>
+                   <br>
+                   Football   |   Stranger Things   |   Cricket   |   F.r.i.e.n.d.s
+               </p>
+           </section>
+           <section>
+               <h4>ROUND 3</h4>
+               <p>The final round consists of making an interesting and astonishing magic trick video which might force people to say “How did you do that!”. The best and the most surprising video will be selected as the winner.</p>
+               
+           </section>
+       </div>
+      </main>
+       <footer>
+           <img src="img/footer.png" id="footer-image";
+       </footer>
+        
+   
+
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
