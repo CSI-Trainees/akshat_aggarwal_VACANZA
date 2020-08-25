@@ -12,7 +12,9 @@
     <style>
         header{
             text-align: center;
-            color: white;
+            color: white;          
+        }
+        .header{
             background-image: url(img/background.png) ;
             background-color: rgba(0,0,0,0.5);
             background-repeat: no-repeat;
@@ -21,15 +23,16 @@
             background-size: cover;
             width: 100%;
             height: 700px;
-            flex-direction: column;          
         }
         nav{
             position: sticky;
         }
         .nav-item{
             display: flex;
-            float: right;
             font-size: 20px;
+        }
+        nav ul  {
+            float: right;
         }
         body {
           box-sizing: border-box;
@@ -78,8 +81,20 @@
             position: relative;
             justify-content: center;
             height: 70px;
-            margin-top: 90px;
-            
+            margin-top: 90px;            
+        }
+        header-logo-box img{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .header-logo-box img:hover{
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+            transition-timing-function: ease-in-out;
+              -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+            width: 255px;
         }
      </style>
   </head>
@@ -87,7 +102,7 @@
   <header class="header">
        <nav class="navbar navbar-expand-lg sticky-top">
         <a class="navbar-brand display-1" href="#">CSI</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style="float: right;">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
