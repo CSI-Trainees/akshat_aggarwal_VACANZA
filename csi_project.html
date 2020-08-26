@@ -10,44 +10,82 @@
 
     <title>Vacanza'18</title>
     <style>
-        header{
-            text-align: center;
-            color: white;          
-        }
-        .header{
-            background-image: url(img/background.png) ;
-            background-color: rgba(0,0,0,0.5);
+        * {
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+          }
+        body{
+            background-image: url(img/background.png);
+            background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center center;
             background-size: cover;
-            width: 100%;
-            height: 700px;
+            background-attachment: fixed;
+            padding: 0%;
         }
-        nav{
-            position: sticky;
-        }
-        .nav-item{
+        .nav{
             display: flex;
-            font-size: 20px;
-        }
-        nav ul  {
-            float: right;
-        }
-        body {
-          box-sizing: border-box;
-          position: relative; 
-        }
-        section{
-            background-color:white;
-            margin-top: 40px;
-            padding: 50px 40px;
+            flex-direction: row;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            z-index:2000;
+            padding:2px;
+             
         }
         
-        main{
-            background-color: lightgray;
-            padding-top:10px;
-            padding-bottom:20px;
+        .nav-logo
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .NavBox
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .NavLink
+        {
+            font-family: sans-serif;
+            font-size: 20px;
+            display: block;
+            margin: 10px;
+            border-radius: 5px;
+            padding:5px 10px 5px 10px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+        }
+        .Navcircle
+        {
+            height: 60px;
+            width: 60px;
+            display: flex;
+        }
+        .navbar-toggler{
+             z-index:2000;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            opacity: 1;
+        }
+        .navbar-toggler-icon{
+            background-color: aqua;
+            
+        }
+        
+         #First
+        {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            margin: 0px;
         }
         #footer-image{
             height:100px;
@@ -77,72 +115,39 @@
                 transform: scale(1);
             }
         }
-        .header-text-logo img{
-            position: relative;
-            justify-content: center;
-            height: 70px;
-            margin-top: 90px;            
-        }
-        header-logo-box img{
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .header-logo-box img:hover{
-            -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
-            transition-timing-function: ease-in-out;
-              -webkit-transform: rotate(720deg);
-              transform: rotate(720deg);
-            width: 255px;
-        }
+        
+        
      </style>
   </head>
   <body>
-  <header class="header">
-       <nav class="navbar navbar-expand-lg sticky-top">
-        <a class="navbar-brand display-1" href="#">CSI</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style="float: right;">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-        <div class=" navbar-collapse" >
-            <ul class="navbar-nav ">
-                <li class="nav-item">
-                    <a class="nav-link" id="one" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="two" href="#">Rounds</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="two" href="#">Quizzes</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <div class="header-content">
-
+      <div class="nav">
+           <div class="nav-logo">
+               <a class="navbar-brand display-1" href="#">CSI</a>
+          </div>
+           <div class="NavBox">
+               <a href="#" class="NavLink">Home</a>
+               <a href="#" class="NavLink">Rounds</a>
+               <a href="#" class="NavLink">Quizzes</a>
+               <div class="NavCircle">
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                  <span class="navbar-toggler-icon "></span>
+                  </button>
+               </div>
+            </div>
+      </div>
+    <div class="main-content" id="first">
             <div class="header-logo-box">
                 <img src="img/logo.PNG" alt="Vacanza_logo" class="header-logo-box-icon">
             </div>
-
-            <div class="header-text-logo">
+             <div class="header-text-logo">
                 <img src="img/vac.svg" alt="text-logo">
             </div>
             <div class="header-buttons">
-                <a href="#" class="btn btn-rules">REGISTER
-                
-            </a>
-                <a href="#" class="btn btn-quiz">START QUIZ
-             
-            </a>
+                <button class="button" style="vertical-align:middle"><span>Register </span></button>
+                <button class="button" style="vertical-align:middle"><span>Start Quiz <i class="fa fa-arrow-right"></i></span></button>
             </div>
         </div>
-  </header>
-      <main>
-           <div class="container">
+    <div class="container" id="second">
            <section>
                <h4>ROUND 1</h4>
                <p>Round 1 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for , the more you score.</p>
@@ -167,7 +172,6 @@
                
            </section>
        </div>
-      </main>
        <footer>
           
            
