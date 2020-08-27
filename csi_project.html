@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shotcut icon" type="img/png" href="img/logo.png">
 
     <title>Vacanza'18</title>
     <style>
@@ -30,7 +31,7 @@
             position: fixed;
             width: 100%;
             z-index:2000;
-            padding:2px;
+            padding:10px;
              
         }
         
@@ -38,6 +39,10 @@
         {
             display: flex;
             flex-direction: row;
+        }
+        .nav-logo a{
+            color: floralwhite;
+            font-size: 30px;
         }
         .NavBox
         {
@@ -71,11 +76,10 @@
             opacity: 1;
         }
         .navbar-toggler-icon{
-            background-color: aqua;
+            background-image: url("https://cdn3.iconfinder.com/data/icons/photo-camera-ui/512/mobile-navigation-bar-menu-responsive-ui-512.png");
             
         }
-        
-         #First
+         #first
         {
             display: inline-flex;
             flex-direction: column;
@@ -86,23 +90,174 @@
             width: 100%;
             height: 100%;
             margin: 0px;
+            padding: 110px;
         }
-        #footer-image{
-            height:100px;
-            animation-name: zoom;
-            animation-duration: 100s;
-            animation-iteration-count: infinite;
-            width: 100%;
-            padding-top: 10px;
-            
+        .header-logo-box-icon{
+            opacity: 0.8;
+            max-height:220px;
+            max-width: 220px;
+            transition: transform 0.4s;
         }
-        footer{
-            animation-name: zoom;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+        .header-logo-box-icon:hover
+        {
+            transform: rotate(360deg) scale(1.2,1.2) ;
+        }
+        .header-text-logo{
+            width:550px;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+        .button {
+          display: inline-block;
+          border-radius: 40px;
+          background-color: transparent;
+          border-color: white;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px;
+          padding: 30px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .button:hover span {
+          padding-right: 25px;
+        }
+
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        #second{
             width: 100%;
+            height: fit-content;
+            background-color: #eeeeee;
+            display:inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
+        }
+        .Box
+        {
+            background-color:white ;
+            height:fit-content;
+            width:fit-content;
+            margin: 20px;
+            display: flex;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            flex-direction:row;
+            justify-content: space-between;
+        }
+        .content-box{
+            margin: 25px 0px 25px 0px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            box-shadow: 10px;
+        }
+         .ContentBox .Heading
+        {
+            font-family: sans-serif;
+            font-size: 30px;
+            margin: 15px 5px 15px 5px;
+        }
+        .ContentBox .Heading2
+        {
+            font-family: sans-serif;
+            font-size: 30px;
+            margin: 5px;
+        }
+        .ContentBox .Paracontent
+        {
+            font-family: sans-serif;
+            color: #4c4646c2;
+            font-size: 20px;
+            margin: 20px 5px 20px 5px;
+        }
+        #image1{
+            background-image: url("img/vintage.jpg");
+            background-size: cover;
+            clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
+            width: 100%;
+        }
+        #image2
+        {
+            background-image: url("img/quiz.jpg");
+            background-size: cover;
+            clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+            width: 100%;
+        }
+        #image3
+        {
+            background-image: url("img/magic.jpg");
+          background-size: cover;
+          clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
+          width: 100%;
+        }
+        .Rules
+        {
+            display: block;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid rgb(7, 90, 7);
+            font-family: sans-serif;
+            text-decoration:none;
+            margin:25px 5px 5px 5px;
+            color: rgb(7, 90, 7);
+        }
+        .Rules:hover
+        {
+            color: white;
+            text-decoration: none;
+            background-color: rgb(7, 90, 7);
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .third{
+            position: relative;
+            top: 0;
+            left: 0;
+            position:fixed;
+            max-height: 100px;
+            max-width: 100%;
+        }
+
+        .image4{
             background-image: url(img/footer.png);
+            background-size: cover;
+            animation-name: zoom;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            width: 100%;
             height: 100px;
+            z-index: 200;
+        }
+        .icons img{
+            position: absolute;
+            bottom: 45px;
+            left:500px;
+            width:30px;
+            z-index: 300;
         }
         @keyframes zoom{
             0%{
@@ -115,6 +270,22 @@
                 transform: scale(1);
             }
         }
+        .footer::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-blend-mode: color;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0, 105, 92), rgb(0, 105, 92)), url(../img/footer.png);
+    position: absolute;
+    animation: 20s ease 0s infinite normal none running scaler;
+}
+<style>
+*, ::after, ::before {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
         
         
      </style>
@@ -140,42 +311,53 @@
                 <img src="img/logo.PNG" alt="Vacanza_logo" class="header-logo-box-icon">
             </div>
              <div class="header-text-logo">
-                <img src="img/vac.svg" alt="text-logo">
+                <img src="img/vac.svg" alt="text-logo" class="header-logo-text-icon">
             </div>
             <div class="header-buttons">
-                <button class="button" style="vertical-align:middle"><span>Register </span></button>
-                <button class="button" style="vertical-align:middle"><span>Start Quiz <i class="fa fa-arrow-right"></i></span></button>
+                <button class="button" style="vertical-align:middle"><span>REGISTER </span></button>
+                <button class="button" style="vertical-align:middle"><span>START QUIZ <i class="fa fa-arrow-right"></i></span></button>
             </div>
         </div>
-    <div class="container" id="second">
-           <section>
-               <h4>ROUND 1</h4>
-               <p>Round 1 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for , the more you score.</p>
-               <p>
-                   <span style="font-weight:700;">The four domains are:</span>
-                   <br>
-                   Vintage Photography   |   Leaf Collage   |   Origami Art   |   Face Mask Art
-               </p>
-           </section>
-           <section>
-               <h4>ROUND 2</h4>
-               <p>Test your knowledge just by answering some basic questions and gain points easily.Round 2 contains quiz questions based on popular TV series and sports.</p>
-               <p>
-                   <span style="font-weight:700;">The field are as follows:</span>
-                   <br>
-                   Football   |   Stranger Things   |   Cricket   |   F.r.i.e.n.d.s
-               </p>
-           </section>
-           <section>
-               <h4>ROUND 3</h4>
-               <p>The final round consists of making an interesting and astonishing magic trick video which might force people to say “How did you do that!”. The best and the most surprising video will be selected as the winner.</p>
-               
-           </section>
-       </div>
-       <footer>
-          
-           
-       </footer>
+    <div id="second">
+            <div class="Box">
+      <div class="ContentBox">
+         <p class="Heading">Round1<p>
+         <hr/>
+         <p class="Paracontent">Round 1 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of 4 domains for more points. The more domain you opt for , the more you score.</p>
+         <p class="Heading2">The four domains are:<p>
+         <p class="Paracontent">
+            Vintage Photography &nbsp; | &nbsp; Leaf Collage &nbsp; | &nbsp; Origami Art &nbsp; | &nbsp; Face Mask Art
+         </p>
+         <a href="#" class="Rules">RULES</a>
+      </div>
+     <div  id="image1"></div>
+     </div>
+     <div class="Box">
+        <div id="image2"></div>
+        <div class="ContentBox">
+         <p class="Heading">Round 2<p>
+         <hr/>
+         <p class="Paracontent">Test your knowledge just by answering some basic questions and gain points easily.Round 2 contains quiz questions based on popular TV series and sports.</p>
+         <p class="Heading2">The field are as follows:<p>
+         <p class="Paracontent">
+            Football &nbsp; | &nbsp; Stranger Things &nbsp; | &nbsp; Cricket &nbsp; | &nbsp; F.r.i.e.n.d.s
+         </p>
+         <a href="#" class="Rules">RULES</a>
+      </div>
+     </div>
+     <div class="Box">
+        <div class="ContentBox">
+         <p class="Heading">Round 3</p>
+         <hr>
+         <p class="Paracontent">The final round consists of making an interesting and astonishing magic trick video which might force people to say “How did you do that!”. The best and the most surprising video will be selected as the winner.</p>
+         <a href="#" class="Rules">RULES</a>
+        </div>
+       <div id="image3"></div>
+     </div>     
+    </div>
+    <footer>
+        
+    </footer>
         
    
 
