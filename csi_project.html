@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Vacanza'18</title>
-    <script>
-        const nav = document.querySelector('.hamburger');
-nav.addEventListener('click',(event) => {
-    nav.classList.toggle('open');
-});
-      </script>
+    <script src="js/script.js"></script>
   </head>
   <body>
       <div class="nav">
@@ -26,9 +21,7 @@ nav.addEventListener('click',(event) => {
           </div>
            <div class="NavBox">
            <div class="Navcircle">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger"><div></div></div>
-            <input type="checkbox" class="toggler" />
+            <input type="checkbox" class="toggler" onclick="MyFunction()" />
          <div class="Hamburger"><div></div></div>
                </div>
         <a href="#First" class="NavLink">HOME</a>
