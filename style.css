@@ -42,7 +42,7 @@
         }
         .NavLink
         {
-            visibility: hidden;
+            visibility: visible;
             font-family: sans-serif;
             font-size: 20px;
             display: block;
@@ -189,6 +189,8 @@
         }
         .button span i{
             opacity: 0;
+            visibility: hidden;
+            font-size: 0;
         }
 
         .button span:after {
@@ -202,6 +204,8 @@
         .button:hover span i{
           padding-right: 10px;
             opacity: 9;
+            visibility: visible;
+            font-size: 20px;
         }
         .button:hover span{
             padding-right: 10px;
