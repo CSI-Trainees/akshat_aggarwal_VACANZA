@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Vacanza'18</title>
+    <script>
+        const nav = document.querySelector('.hamburger');
+nav.addEventListener('click',(event) => {
+    nav.classList.toggle('open');
+});
+      </script>
   </head>
   <body>
       <div class="nav">
@@ -19,16 +25,17 @@
                <a class="navbar-brand display-1" href="#">CSI</a>
           </div>
            <div class="NavBox">
-               <a href="#" class="NavLink">Home</a>
-               <a href="#" class="NavLink">Rounds</a>
-               <a href="#" class="NavLink">Quizzes</a>
-               <div class="NavCircle">
-                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                  <span class="navbar-toggler-icon "></span>
-                  </button>
+           <div class="Navcircle">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <input type="checkbox" class="toggler" />
+         <div class="Hamburger"><div></div></div>
                </div>
-            </div>
+        <a href="#First" class="NavLink">HOME</a>
+       <a href="#Second" class="NavLink">ROUNDS</a>
+       <a href="#" class="NavLink">QUIZZES</a>
       </div>
+    </div>
     <div class="main-content" id="first">
             <div class="header-logo-box">
                 <img src="img/logo.PNG" alt="Vacanza_logo" class="header-logo-box-icon">
