@@ -167,7 +167,10 @@
             padding-bottom: 40px;
         }
         .button {
-          display: inline-block;
+          display: inline-flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
           border-radius: 45px;
           background-color: transparent;
           border-color: white;
@@ -183,7 +186,10 @@
 
         .button span {
           cursor: pointer;
-          display: inline-block;
+          display: inline-flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
           position: relative;
           transition: 0.5s;
         }
@@ -266,21 +272,21 @@
             margin: 15px 5px 15px 20px;
         }
         #image1{
-            background-image: url("../img/vintage.jpg");
+            background-image: url("img/vintage.jpg");
             background-size: cover;
             clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
             width: 100%;
         }
         #image2
         {
-            background-image: url("../img/quiz.jpg");
+            background-image: url("img/quiz.jpg");
             background-size: cover;
             clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
             width: 100%;
         }
         #image3
         {
-            background-image: url("../img/magic.jpg");
+            background-image: url("img/magic.jpg");
           background-size: cover;
           clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
           width: 100%;
