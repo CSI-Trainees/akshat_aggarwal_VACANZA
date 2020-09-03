@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+  }
+body{
+    background-image:url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0%;
+}
+.test
+{
+    color: red;
+    font-size: 50px;
+}
+#First
+{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+#Second
+{
+    width: 100%;
+    height: fit-content;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+
+}
+
+.Box
+{
+    background-color:white ;
+    height:fit-content;
+    width:fit-content;
+    /*padding: 5px;*/
+    /*border : 2px solid black;*/
+    margin: 20px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+#Third
+{
+    width: 100%;
+    height: 25%;  
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+#Contact
+{
+    width: 100%;
+    height: 85%;
+    border:2px solid black;
+    background-color:rgba(29, 222,12,0.38);
+}
+#Trademark
+{
+   width: 100%;
+   height: 15%;
+   background-color:rgb(44,111,38);  
+}
+
+#Nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index:2000;
+    padding:2px;
+}
+.NavBox
+{
+    display: flex;
+    flex-direction: row;
+}
+.NavLink
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+    padding:5px 10px 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+.Navcircle
+{
+    height: 60px;
+    width: 60px;
+    display: flex;
+}
+.toggler
+{
+    z-index:2000;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+}
+#VacLogo
+{
+    opacity: 0.8;
+    max-height:200px;
+    max-width: 200px;
+    transition: transform 0.4s;
+}
+#VacLogo:hover
+{
+    transform: rotate(360deg) scale(1.2,1.2) ;
+}
+#Vac
+{
+    width: 675px;
+    height: 150px;
+}
+.Logo
+{
+    padding: 0px;
+}
+#Options
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.Option
+{
+   font-family: sans-serif;
+   height: fit-content;
+   width: fit-content;
+   border : 2px solid white;
+   margin: 20px;
+   padding: 10px;
+   border-radius:35px;
+}
+.OptionText
+{
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+#Image1
+{
+  background-image: url("../Drawable/vintage.jpg");
+  background-size: cover;
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
+  width: 100%;
+}
+#Image2
+{
+    background-image: url("../Drawable/quiz.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    width: 100%;
+}
+#Image3
+{
+    background-image: url("../img/magic.jpg");
+  background-size: cover;
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
+  width: 100%;
+}
+.CSI p
+{
+    font-family:sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.ContentBox
+{
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.ContentBox .Heading
+{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 15px 5px 15px 5px;
+}
+.ContentBox .Heading2
+{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 5px;
+}
+.ContentBox .Paracontent
+{
+    font-family: sans-serif;
+    color: #4c4646c2;
+    font-size: 20px;
+    margin: 20px 5px 20px 5px;
+}
+.LeftImage
+{
+    background-image: url("../img/quiz.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    width: 100%;
+}
+.Rules
+{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid rgb(7, 90, 7);
+    font-family: sans-serif;
+    text-decoration:none;
+    margin:25px 5px 5px 5px;
+    color: rgb(7, 90, 7);
+}
+.Rules:hover
+{
+    color: white;
+    background-color: rgb(7, 90, 7);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
