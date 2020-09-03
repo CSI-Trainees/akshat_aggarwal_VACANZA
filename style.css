@@ -168,6 +168,10 @@
             margin-top: 40px;
             padding-bottom: 40px;
         }
+        .header-logo-text-icon{
+            display: flex;
+            justify-content: center;
+        }
         .button {
           display: inline-flex;
             align-content: center;
@@ -418,38 +422,46 @@
         ::-webkit-scrollbar-thumb:hover {
           background-color:darkseagreen; 
         }
-@media only screen and (max-width:900px)
 
-/*for 600px*/
 @media only screen and (max-width:600px)
 {
-    #middle-area{
-        float: right;
-        width:900px;
+    .header-logo-text-icon{
+        width: 450px;
+        display: flex;
+    }
+    .header-logo-text{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        
     }
     .main-content{
-        width: 200px;
-        height: 100%;
-    }
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        }
     .ContentBox
     {
         padding: 5px 10px 5px 10px;
     }
     .ContentBox .Paragraph
     {
-        color: white;
+        color: black;
         font-size: 15px;
         margin: 5px 5px 5px 5px;
     }
     .ContentBox .Heading
     {
-        color: white;
+        color: black;
         font-size: 25px;
         margin: 5px 5px 5px 5px;
     }
     .ContentBox .Heading2
    {
-     color: white;
+     color: black;
      font-size: 25px;
      margin: 2px;
    }
@@ -457,44 +469,7 @@
         width:100%;
         background-size: cover;
     }
-   #image1
-    {
-        display: none;
-        
-    }
-    #image2
-    {
-        display: none;
-    }
-    #image3
-    {
-        display: none;
-    }
-    .ContentBox
-    {
-        margin: 0px;
-        background-color: rgba(0,0,0,0.5);
-    }
-    #ContentBox1
-    {
-        background-image: url("../Drawable/vintage.jpg");
-        background-size: cover;
-    }
-    #ContentBox2
-    {
-        background-image: url("../Drawable/quiz.jpg");
-        background-size: cover;
-    }
-    #ContentBox3
-    {
-        background-image: url("../Drawable/magic.jpg");
-        background-size: cover;
-    }
-    .ContactIcon
-   {
-    margin: 12px;
-    height: 100%;
-   }
+  
    .Rules
   {
     border: 1px solid white;
