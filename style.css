@@ -6,10 +6,12 @@
         body{
             background-image: url(background.png);
             background-position: center;
+            background-attachment: scroll;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             padding: 0%;
+            width: 100%;
         }
         .nav{
             display: flex;
@@ -236,7 +238,7 @@
         {
             background-color:white ;
             height:fit-content;
-            width:1050px;
+            width:fit-content;
             margin: 20px;
             display: flex;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -416,3 +418,116 @@
         ::-webkit-scrollbar-thumb:hover {
           background-color:darkseagreen; 
         }
+@media only screen and (max-width:900px)
+
+/*for 600px*/
+@media only screen and (max-width:600px)
+{
+    #middle-area{
+        float: right;
+        width:900px;
+    }
+    .main-content{
+        width: 200px;
+        height: 100%;
+    }
+    .ContentBox
+    {
+        padding: 5px 10px 5px 10px;
+    }
+    .ContentBox .Paragraph
+    {
+        color: white;
+        font-size: 15px;
+        margin: 5px 5px 5px 5px;
+    }
+    .ContentBox .Heading
+    {
+        color: white;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .ContentBox .Heading2
+   {
+     color: white;
+     font-size: 25px;
+     margin: 2px;
+   }
+    .main-content{
+        width:100%;
+        background-size: cover;
+    }
+   #image1
+    {
+        display: none;
+        
+    }
+    #image2
+    {
+        display: none;
+    }
+    #image3
+    {
+        display: none;
+    }
+    .ContentBox
+    {
+        margin: 0px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    #ContentBox1
+    {
+        background-image: url("../Drawable/vintage.jpg");
+        background-size: cover;
+    }
+    #ContentBox2
+    {
+        background-image: url("../Drawable/quiz.jpg");
+        background-size: cover;
+    }
+    #ContentBox3
+    {
+        background-image: url("../Drawable/magic.jpg");
+        background-size: cover;
+    }
+    .ContactIcon
+   {
+    margin: 12px;
+    height: 100%;
+   }
+   .Rules
+  {
+    border: 1px solid white;
+    color: white;
+    transition: all 0.2s;
+  }
+  .Rules:hover
+  {
+      transform: translate(0px,-5px);
+      background-color: rgba(0,0,0,0);
+  }
+  #VacLogo
+  {
+   max-height:90px;
+   max-width: 90px;
+  }
+  #Vac
+  {
+   width: 120px;
+   height: 50px;
+  }
+  .Option
+  {
+      font-size: 10px;
+  }
+  .Option:hover > i
+  {
+    /*display: inline-block;*/
+    font-size: 10px;
+  }
+  .CSI p
+  {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
