@@ -4,7 +4,7 @@
             padding:0px;
           }
         body{
-            background-image: url(../img/background.png);
+            background-image: url(background.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -272,21 +272,21 @@
             margin: 15px 5px 15px 20px;
         }
         #image1{
-            background-image: url("img/vintage.jpg");
+            background-image: url("vintage.jpg");
             background-size: cover;
             clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
             width: 100%;
         }
         #image2
         {
-            background-image: url("img/quiz.jpg");
+            background-image: url(quiz.jpg");
             background-size: cover;
             clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
             width: 100%;
         }
         #image3
         {
-            background-image: url("img/magic.jpg");
+            background-image: url("magic.jpg");
           background-size: cover;
           clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
           width: 100%;
@@ -331,7 +331,7 @@
             animation-duration: 15s;
             animation-iteration-count: infinite;
             background-blend-mode: color;
-            background-image: linear-gradient(rgb(0, 105, 92), rgb(0, 105, 92)), url(../img/footer.png);
+            background-image: linear-gradient(rgb(0, 105, 92), rgb(0, 105, 92)), url(footer.png);
             position: absolute;
             display: flex;
             align-content: center;
